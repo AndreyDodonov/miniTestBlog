@@ -8,7 +8,7 @@
     "dev": "nodemon app.js",
     "client-watch": "npm run watch --prefix client",
     "devServer": "concurrently \"npm run server\" \"npm run client-watch\"",
-    "build": "node app.js"
+    "start": "node app"
   },
   "author": "Andrew Dodonov",
   "license": "ISC",
