@@ -1,0 +1,25 @@
+{
+  "name": "testblog",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "node app.js",
+    "dev": "nodemon app.js",
+    "client-watch": "npm run watch --prefix client",
+    "devServer": "concurrently \"npm run server\" \"npm run client-watch\"",
+    "build": "NPM_CONFIG_PRODUCTION=true npm run server && npm run build --prefix client"
+  },
+  "author": "Andrew Dodonov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1"
+  }
+}
