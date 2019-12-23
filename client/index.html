@@ -5,11 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="./src/scss/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./src/scss/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>TestFinMan</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+          integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <title>TestMiniBlog</title>
 </head>
 <body>
+<!-- HEADER -->
+<header class="page-header">
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#!" class="brand-logo"><i class="material-icons">create</i>Test blog</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <div class="center row">
+                            <div class="col s12 ">
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s6 s12">
+                                        <i class="material-icons prefix">search</i>
+                                        <input type="text" placeholder="search" id="autocomplete-input"
+                                               class="autocomplete white-text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Mobile</a></li>
+        </ul>
+    </div>
+
+</header>
+
 <!-- RENDER POST -->
 <div class="container">
     <div class="row">
@@ -57,9 +97,37 @@
     </div>
 </div>
 
+<!-- FOOTER -->
+<footer class="page-footer blue">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Test mini blog</h5>
+                <p class="grey-text text-lighten-4">Its my test area. </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/andrew.dodonov"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://vk.com/id230290772"><i class="fab fa-vk"></i></a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://github.com/AndreyDodonov"><i class="fab fa-github"></i></a></li>
+                    <li><a class="grey-text text-lighten-3" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2019 Andrew Dodonov
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+
 
 <!-- SCRIPTS -->
 <script defer src="./dist/dist/bundle.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>

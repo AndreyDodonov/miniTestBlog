@@ -172,8 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
         posts = backendPosts.concat();
         renderPosts(posts)
     });
+    // init modal windows
     modal = M.Modal.init(document.querySelector('.modal'));
     document.querySelector('#createPost').addEventListener('click', onCreatePost);
+    // init mobile hamburger menu
+    let menuElems = document.querySelectorAll('.sidenav');
+    let instances = M.Sidenav.init(menuElems);
 });
 
 
